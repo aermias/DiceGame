@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiceActivity">
+
+    <Button
+        android:id="@+id/rollDie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_die" />
+
+    <TextView
+        android:id="@+id/dieRolled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rollDie"
+        android:text="@string/die_rolled"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/chooseNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dieRolled"
+        android:text="@string/choose_number"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/numberGuessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseNumber"
+        android:textSize="28sp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:visibility="invisible"
+        android:hint="@string/zero"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/submitGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberGuessed"
+        android:visibility="invisible"
+        android:text="@string/submit_guess"
+        android:enabled="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/numberRolled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitGuess"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

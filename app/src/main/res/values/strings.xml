@@ -1,0 +1,32 @@
+<resources>
+    <!-- MainActivity -->
+    <string name="app_name">Dice Game</string>
+    <string name="welcome">Welcome!</string>
+    <string name="game_desc">
+        The object of this game is to guess the number that a six-sided die will land on after being rolled.
+        \n
+        If you take less guesses, then you score a higher amount of points.
+    </string>
+    <string name="scoring_title">Scoring</string>
+    <string name="scoring">
+        1 try - 1000 points\n
+        2 tries - 500 points\n
+        3 tries - 100 points\n
+    </string>
+    <string name="start_game_text">Click the button below to start the game.</string>
+
+    <!-- DiceActivity -->
+    <string name="roll_die">Click to roll die</string>
+    <string name="die_rolled">The die has been rolled.</string>
+    <string name="choose_number">Pick a number from 1 to 6.</string>
+    <string name="submit_guess">Submit Guess</string>
+    <string name="correct">You guessed right!\n\nYou scored -n points!</string>
+    <string name="incorrect">The number you guessed is too</string>
+    <string name="tries_left">You have -n tries left.</string>
+    <string name="no_tries">You are out of tries.\n\nThe correct number was</string>
+    <string name="play_again">Play Again?</string>
+    <string name="zero">0</string>
+    <!--
+    <string name=""></string>
+    -->
+</resources>
